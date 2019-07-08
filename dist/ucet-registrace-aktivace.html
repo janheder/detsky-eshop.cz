@@ -166,52 +166,63 @@
     </nav>
     <div class="a-darkOverlay" id="js-darkOverlay"></div>
     <div class="a-navPush"></div>
-    <nav class="o-navProducts" id="js-navProducts">
-      <div class="o-navProducts__user m-navUserMenu">
-        <div class="m-navUserMenu__heading" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser"><span class="a-icon -user -white m-navUserMenu__img"></span>
-          <div class="m-navUserMenu__username">Petr Novák</div><span class="a-icon -cheveron -white m-navUserMenu__cheveron"> </span>
-        </div>
-        <div class="collapse m-navUserMenu__content" id="collapseUser"><a class="m-navUserMenu__link" href="#"><span class="a-icon -personalInfo m-navUserMenu__icon"></span> Změna osobních údajů</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -calendar m-navUserMenu__icon"></span> Historie objednávek</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -logOut m-navUserMenu__icon"></span> Odhlásit</a></div>
-      </div>
-      <!--
-      <div class="o-navProducts__user m-navUserMenu">
-      	<a class="m-navUserMenu__heading" data-toggle="modal" data-target="#modal-login">
-      		<span class="a-icon -user -white m-navUserMenu__img"></span>
-      		<div class="m-navUserMenu__username">Přihlášení</div>
-      	</a>
-      </div>
-      
-      
-      -->
-      <div class="accordion o-navProducts__accordion" id="accordionProducts">
-        <div class="o-navProducts__item">
-          <div class="o-navProducts__link" id="headingProducts-1" data-toggle="collapse" data-target="#collapseProducts-1" aria-expanded="false" aria-controls="collapseProducts-1">Akční nabídka</div><a class="o-navProducts__linkDesktop" href="#">Akční nabídka</a>
-          <div class="collapse o-navProducts__collapse" id="collapseProducts-1" aria-labelledby="headingProducts-1" data-parent="#accordionProducts">
-            <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="navProducts__toggle">Menu kategorií</div>
+          <div class="navProducts--absolute">
+            <nav class="o-navProducts" id="js-navProducts">
+              <div class="o-navProducts__user m-navUserMenu">
+                <div class="m-navUserMenu__heading" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser"><span class="a-icon -user -white m-navUserMenu__img"></span>
+                  <div class="m-navUserMenu__username">Petr Novák</div><span class="a-icon -cheveron -white m-navUserMenu__cheveron"> </span>
+                </div>
+                <div class="collapse m-navUserMenu__content" id="collapseUser"><a class="m-navUserMenu__link" href="#"><span class="a-icon -personalInfo m-navUserMenu__icon"></span> Změna osobních údajů</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -calendar m-navUserMenu__icon"></span> Historie objednávek</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -logOut m-navUserMenu__icon"></span> Odhlásit</a></div>
+              </div>
+              <!--
+              <div class="o-navProducts__user m-navUserMenu">
+              	<a class="m-navUserMenu__heading" data-toggle="modal" data-target="#modal-login">
+              		<span class="a-icon -user -white m-navUserMenu__img"></span>
+              		<div class="m-navUserMenu__username">Přihlášení</div>
+              	</a>
+              </div>
+              
+              
+              -->
+              <div class="accordion o-navProducts__accordion" id="accordionProducts">
+                <div class="o-navProducts__item">
+                  <div class="o-navProducts__link" id="headingProducts-1" data-toggle="collapse" data-target="#collapseProducts-1" aria-expanded="false" aria-controls="collapseProducts-1">Akční nabídka</div><a class="o-navProducts__linkDesktop" href="#">Akční nabídka</a>
+                  <div class="collapse o-navProducts__collapse" id="collapseProducts-1" aria-labelledby="headingProducts-1" data-parent="#accordionProducts">
+                    <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-navProducts__item">
+                  <div class="o-navProducts__link" id="headingProducts-2" data-toggle="collapse" data-target="#collapseProducts-2" aria-expanded="false" aria-controls="collapseProducts-2">Matrace </div><a class="o-navProducts__linkDesktop" href="#">Postele</a>
+                  <div class="collapse o-navProducts__collapse" id="collapseProducts-2" aria-labelledby="headingProducts-2" data-parent="#accordionProducts">
+                    <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-navProducts__item">
+                  <div class="o-navProducts__link" id="headingProducts-3" data-toggle="collapse" data-target="#collapseProducts-3" aria-expanded="false" aria-controls="collapseProducts-3">Postele</div><a class="o-navProducts__linkDesktop" href="#">Postele</a>
+                  <div class="collapse o-navProducts__collapse" id="collapseProducts-3" aria-labelledby="headingProducts-3" data-parent="#accordionProducts">
+                    <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-navProducts__item"><a class="o-navProducts__link" href="#">Postele</a><a class="o-navProducts__linkDesktop" href="#">Postele</a></div>
+              </div>
+            </nav>
+            <div class="m-navProductsClose" id="js-navProductsClose"><span class="a-icon -cross -white"></span></div>
           </div>
         </div>
-        <div class="o-navProducts__item">
-          <div class="o-navProducts__link" id="headingProducts-2" data-toggle="collapse" data-target="#collapseProducts-2" aria-expanded="false" aria-controls="collapseProducts-2">Matrace </div><a class="o-navProducts__linkDesktop" href="#">Postele</a>
-          <div class="collapse o-navProducts__collapse" id="collapseProducts-2" aria-labelledby="headingProducts-2" data-parent="#accordionProducts">
-            <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
-            </div>
-          </div>
+        <div class="col-12 col-md-9">   
+          <nav class="m-breadcrumb">
+            <div class="m-breadcrumb__container"><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><a class="m-breadcrumb__item" href="#">Dolor sit amet</a><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><span class="m-breadcrumb__item active">Lorem ipsum</span></div>
+          </nav>
         </div>
-        <div class="o-navProducts__item">
-          <div class="o-navProducts__link" id="headingProducts-3" data-toggle="collapse" data-target="#collapseProducts-3" aria-expanded="false" aria-controls="collapseProducts-3">Postele</div><a class="o-navProducts__linkDesktop" href="#">Postele</a>
-          <div class="collapse o-navProducts__collapse" id="collapseProducts-3" aria-labelledby="headingProducts-3" data-parent="#accordionProducts">
-            <div class="o-navProducts__subCategoryWrap"><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a><a class="o-navProducts__subCategory" href="#"><span class="o-navProducts__subCategoryText" href="#">Postele</span></a>
-            </div>
-          </div>
-        </div>
-        <div class="o-navProducts__item"><a class="o-navProducts__link" href="#">Postele</a><a class="o-navProducts__linkDesktop" href="#">Postele</a></div>
       </div>
-    </nav>
-    <div class="m-navProductsClose" id="js-navProductsClose"><span class="a-icon -cross -white"></span></div>
-    <nav class="m-breadcrumb">
-      <div class="container m-breadcrumb__container"><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><a class="m-breadcrumb__item" href="#">Dolor sit amet</a><a class="m-breadcrumb__item" href="#">Lorem ipsum</a><span class="m-breadcrumb__item active">Lorem ipsum</span></div>
-    </nav>
+    </div>
     <main>
       <div class="container">
         <div class="row">
@@ -252,7 +263,7 @@
               <p class="o-footerMain__text">J.Čapka 3097</p>
               <p class="o-footerMain__text">Frýdek-Místek, 738 01</p><a class="o-footerMain__link" href="#">Více kontaktů</a>
             </div>
-            <div class="col-6 col-sm-6 col-lg-6">
+            <div class="col-12 col-sm-12 col-lg-6">
               <h5 class="o-footerMain__title">Můžete nás kontaktovat</h5>
               <div class="o-footerContacts__wrap">
                 <div class="o-footerContacts__single">
@@ -261,6 +272,9 @@
                 <div class="o-footerContacts__single">
                   <div class="a-icon -envelope -white o-footerContacts__icon"></div> info@mojespani.cz               
                 </div>
+              </div>
+              <div class="o-footerContacts__caption"><img class="o-footerContacts__captionLogo" src="img/logo-bw.svg">
+                <div class="o-footerContacts__captionText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris metus. Maecenas aliquet accumsan leo. Praesent vitae arcu tempor neque lacinia pretium. </div>
               </div>
             </div>
           </div>

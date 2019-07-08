@@ -120,17 +120,42 @@
 }
 
 @media screen and (min-width:992px){
-    .o-navProducts__link{
-        display: none;
-    }
     .o-navProducts__item{
         height: 100%;
         width: 100%;
-        &:hover, &:active, &:focus{
-            & .o-navProducts__linkDesktop + .o-navProducts__collapse{
-                display: block;
-            }
+        position: relative;
+    }
+    .o-navProducts__link{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 52px;
+        z-index: 2;
+        font-size: 0;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background: $bg-medium;
+            width: 10px;
+            height: 2px;
+            left: 50%;
+            right: auto;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }    
+        &::after{
+            background: $bg-medium;
+            width: 2px;
+            height: 10px;
+            left: 50%;
+            right: auto;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
+    }
+    .o-navProducts__link[aria-expanded="true"]::after, .o-navProducts__linkDesktop[aria-expanded="true"]::after{
+        display: none;
     }
     .o-navProducts__collapse{
         border-top: 0;
@@ -149,6 +174,7 @@
 @media screen and (max-width:991px){
     .o-navProducts{
         position: fixed;
+        display: flex !important;
         z-index: 9;
         width: 260px;
         transform: translateX(-100%);
@@ -255,4 +281,35 @@
     .o-navProducts__user{
         display: flex;
     }
+    .navProducts__toggle{
+        display: none;
+    }
 }
+
+@media screen and (min-width:992px){
+    .navProducts__toggle {
+        background: $bg-light;
+        font-weight: 700;
+        color: $text-primary;
+        padding: 0 2rem;
+        height: 5.4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+    .navProducts--absolute{
+        position: relative;
+    }
+    .navProducts--absolute .o-navProducts{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+        margin: 0;
+    }
+}
+

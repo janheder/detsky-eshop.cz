@@ -5,7 +5,7 @@
     z-index: 1;
     position: relative;
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
 }
 .m-breadcrumb__container{
     display: flex;
@@ -19,6 +19,7 @@
 }
 .m-breadcrumb__item{     
     @include f-14-dark-regular;
+    font-weight: 600;
     padding-left: 26px;
     position: relative;
     padding: 1rem 1.5rem 1rem 2rem;
@@ -78,5 +79,11 @@
                 transform: rotate(180deg);
             }
         }
+    }
+}
+
+@media screen and (max-width:991px){
+    .m-breadcrumb{
+        margin: 0rem auto 0 auto;
     }
 }

@@ -157,6 +157,11 @@ $("#js-navSearchToggler, #js-navSearchTogglerClose").click(function() {
 $("#js-filterToggler, #js-filterTogglerResponsive, #js-filterTogglerResponsive2").click(function() { 
     $("#js-filter").toggleClass("-active");
 });
+$(".navProducts__toggle").click(function() { 
+    $("#js-navProducts").slideToggle();
+});
+
+
 
 // =============================================================================
 // FILTER 
@@ -349,7 +354,7 @@ $(function () {
 // =============================================================================
 // SELECTBOX 
 // =============================================================================
-
+/*
 if($(".m-selectBox .m-selectBox__input:checked")){ 
     var value = $(".m-selectBox .m-selectBox__input:checked").siblings(".m-selectBox__content").find(".m-selectBox__name").text();
 
@@ -390,7 +395,7 @@ $(".m-selectBox .m-selectBox__input").click(function () {
     $(".swiper-slide-active .m-productDetailCarousel__link").attr("href", "/img_produkty/velke/" + vybrano);
     $(".swiper-slide-active .m-productDetailCarousel__img").attr("src", "/img_produkty/velke/" + vybrano);
 });
-
+*/
 
 // =============================================================================
 // CART

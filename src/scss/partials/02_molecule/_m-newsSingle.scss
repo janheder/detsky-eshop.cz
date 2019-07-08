@@ -4,7 +4,7 @@
     overflow: hidden;
     margin: 10px 0;
     width: 100%;
-    display: block;
+    display: flex;
 
     &:hover, &:active, &:focus{
         color: $text-primary;
@@ -17,11 +17,12 @@
 }
 .m-newsSingle__top{
     position: relative;
-    min-height: 300px;
-    width: 100%;
+    min-height: 140px;
+    width: 200px;
     background: $bg-light;
     overflow: hidden;
     border-radius: $border-radius-primary;
+    flex-shrink: 0;
 }
 .m-newsSingle__img{
     z-index: 0;
@@ -43,17 +44,21 @@
     @include f-14-dark-regular;
     font-size: 13px;
     color: $text-medium;
+    padding: 10px 0;
 }
 .m-newsSingle__bottom{
     padding: 1.5rem 0;
     background: transparent;
+    flex-grow: 1;
+    padding-left: 20px;
 }
 .m-newsSingle__title{
-    @include f-16-primary-regular;
-    height: 4.5rem;
+    font-size: 20px;
     overflow: hidden;
     margin: 0;
-
+}
+.m-newsSingle__text{
+    font-size: 14px;
 }
 @media screen and (max-width:991px){
     .m-newsSingle__top{

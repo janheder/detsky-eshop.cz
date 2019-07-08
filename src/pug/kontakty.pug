@@ -6,13 +6,18 @@ html(lang=lang)
         include partials/_modal-login.pug
         header.o-header
             include partials/_navMain.pug
-            include partials/_navProducts.pug
-        include partials/_modal-reklamace.pug
 
-        section.o-pageHeading
-            include partials/_breadcrumb-transparent.pug
-            .container.o-pageHeading__container
-                h1.o-pageHeading__title Kontakty
+        include partials/_modal-reklamace.pug
+        .container
+            .row
+                .col-12.col-md-3
+                    .navProducts__toggle Menu kategorií
+
+                    .navProducts--absolute
+                        include partials/_navProducts.pug
+
+                .col-12.col-md-9    
+                    include partials/_breadcrumb.pug
         main 
             .container
                 .printArea

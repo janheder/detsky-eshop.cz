@@ -6,16 +6,28 @@ html(lang=lang)
         include partials/_modal-login.pug
         header.o-header
             include partials/_navMain.pug
-            include partials/_navProducts.pug
 
         include partials/_modal-add-to-cart.pug
         include partials/_modal-contact.pug
-        include partials/_breadcrumb.pug
+        .container
+            .row
+                .col-12.col-md-3
+                    .navProducts__toggle Menu kategorií
+
+                    .navProducts--absolute
+                        include partials/_navProducts.pug
+
+                .col-12.col-md-9    
+                    include partials/_breadcrumb.pug
 
         section.o-productDetail
             .container
+
+                h1.m-productDetailMain__title Postel Angelika 160/200 cm masiv borovice
+
+
                 .row
-                    .col-12.col-lg-7.o-productDetail__col
+                    .col-12.col-lg-6.o-productDetail__col
                         .o-productDetail__carousel.m-productDetailCarousel
 
                             .m-productDetailCarousel__tags
@@ -62,66 +74,35 @@ html(lang=lang)
                                                 figcaption.m-productDetailThumbs__figcaption(itemprop="caption description") Popis obrázku 1
 
 
-                    .col-12.col-lg-5.o-productDetail__col
+                    .col-12.col-lg-6.o-productDetail__col
                         .o-productDetail__main.m-productDetailMain
 
-                            h1.m-productDetailMain__title Postel Angelika 160/200 cm masiv borovice
 
-                            .m-productDetailMain__misc
-                                .m-productDetailMain__social.m-socialShare
-                                    .m-socialShare__title Sdílet:
-                                    a.m-socialShare__link(href="https://www.facebook.com/share.php?u=[URL]&title=[TITLE]" target="_blank") #[span.a-icon.-facebook.m-socialShare__icon]
-                                    a.m-socialShare__link(href="http://twitter.com/home?status=[TITLE]+[URL]" target="_blank") #[span.a-icon.-twitter.m-socialShare__icon]
 
-                            .m-productDetailMain__tags
-                                span.m-productDetailMain__tagSingle Výrobce: Visby
+
+
 
 
                             .m-productDetailMain__description
-                                p.m-productDetailMain__descriptionTitle Popis produktu
+         
                                 p.m-productDetailMain__descriptionText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. #[a(href="#anchor-product-detail-description") Celý popis produktu]
                             
 
-                            .m-productDetailMain__stock 
-                                span.a-icon.-box.-green.m-productDetailMain__stockIcon
-                                span.m-productDetailMain__stockText Dostupné skladem
+
 
                             form.m-productDetailMain__form(method="post" name="product_detail_form" id="product_detail_form")
 
-                                .dropdown.m-productDetailMain__sizes.m-selectBox
-                                    input.m-selectBox__honeypot(type="radio" name="productSize" id="productSizeId" required)
-                                    .dropdown-toggle.m-selectBox__dropdown(id="productSizeDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
-                                        .m-selectBox__dropdownText Provedení
-                                        span.a-icon.-cheveron.m-selectBox__icon
-                                    .dropdown-menu.m-selectBox__dropdownMenu(aria-labelledby="productSizeDrop")
-
-                                        label.m-selectBox__label
-                                            input.m-selectBox__input(type="radio" name="productSize" id="productSizeId" required checked)
-                                            .m-selectBox__content
-                                                .m-selectBox__name medium
-                                                .m-selectBox__price 
-                                                    .m-selectBox__priceOld 5 000 Kč
-                                                    .m-selectBox__priceNew 2 000 Kč
-                                                .m-selectBox__stock Dostupné skladem
-
-
-                                        - for (var i=0; i<8; i++)
-                                            
-                                            label.m-selectBox__label
-                                                input.m-selectBox__input(type="radio" name="productSize" id="productSizeId" required)
-                                                .m-selectBox__content
-                                                    .m-selectBox__name largo
-                                                    .m-selectBox__price 
-                                                        .m-selectBox__priceOld 9 000 Kč
-                                                        .m-selectBox__priceNew 5 000 Kč
-                                                    .m-selectBox__stock 21 dní
 
 
 
                                 .m-productDetailMain__priceWrap
-                                    span.m-productDetailMain__priceOld 22 999 Kč
-                                    h2.m-productDetailMain__priceMain 18 546 Kč
-                                    span.m-productDetailMain__priceDPH 16 800 Kč bez DPH
+                                    .m-productDetailMain__priceInner
+                                        span.m-productDetailMain__priceOld 22 999 Kč
+                                        h2.m-productDetailMain__priceMain 18 546 Kč
+                                        span.m-productDetailMain__priceDPH 16 800 Kč bez DPH
+                                    .m-productDetailMain__priceHelp
+                                        .m-productDetailMain__priceHelpText Máš problém s nákupem?
+                                        .m-productDetailMain__priceHelpNum +420 656 985 734
 
 
                                 .m-productDetailMain__cta
@@ -136,17 +117,43 @@ html(lang=lang)
 
                                     button.btn.m-productDetailMain__button(type="submit" name="buy-button") #[span.a-icon.-cart.-white.m-productDetailMain__icon] Do košíku
 
+
+
+                                .m-productDetailMain__stock 
+                                    span.a-icon.-box.-green.m-productDetailMain__stockIcon
+                                    span.m-productDetailMain__stockText Dostupné skladem
+
+
+
                                 .m-productDetailMain__info
                                     span.m-productDetailMain__id Katalogové číslo: Angeli160
                                     span.m-productDetailMain__id Záruka: 24 měsíců
+                                    
+                                .m-productDetailMain__table
+                                    table.table
+                                        tr
+                                            th Parametr
+                                            th Hodnota
+
+                                        tr
+                                            td Lorem ipsum
+                                            td Lorem ipsum
+                                        tr
+                                            td Lorem ipsum
+                                            td Lorem ipsum
+                                        tr
+                                            td Lorem ipsum
+                                            td Lorem ipsum
+
 
         section.o-productDetailVariants
             .container
                 h2.o-productDetailVariants__title Další varianty produktu
                 .o-productDetailVariants__heading
                     .o-productDetailVariants__headinsSingle Název
-                    .o-productDetailVariants__headinsSingle Dostupnost
+                    .o-productDetailVariants__headinsSingle Počet kusů
                     .o-productDetailVariants__headinsSingle Cena
+                    .o-productDetailVariants__headinsSingle Dostupnost
                     .o-productDetailVariants__headinsSingle
 
                 - for (var i=0; i<8; i++)
@@ -154,9 +161,17 @@ html(lang=lang)
                         .o-productDetailVariants__imgWrap
                             img.o-productDetailVariants__img(src=URLbase+"img/product-thumb-small.jpg" alt="#")
                         .o-productDetailVariants__text Laťkový rošt s textilií 180/200 cm
-                        .o-productDetailVariants__text.-stock Skladem
+                        .o-productDetailVariants__text
+                            .m-numberStepper
+                                input.m-numberStepper__input(type="number" min="1" max="99" value="1" name="cart-item-alt")
+                                .m-numberStepper__btnUp
+                                    span.m-numberStepper__iconUp
+                                .m-numberStepper__btnDown
+                                    span.m-numberStepper__iconDown
+
                         .o-productDetailVariants__text.-price 426 Kč
-                        a.o-productDetailVariants__text.-link(href="#") Detail produktu #[span.a-icon.-cheveron.o-productDetailVariants__icon]
+                        .o-productDetailVariants__text.-stock Skladem
+                        a.btn.o-productDetailVariants__text.-link(href="#") #[span.a-icon.-cart.-white.o-productDetailVariants__icon]
 
         section.o-productDescription(id="anchor-product-detail-description")
             .container
@@ -175,21 +190,7 @@ html(lang=lang)
                         p Přípravek obsahuje termální vodu Avene, bambucké máslo, meiboserin, lipomucin.
 
                     
-                    .col-12.col-md-4
-                        table.table
-                            tr
-                                th Parametr
-                                th Hodnota
-
-                            tr
-                                td Lorem ipsum
-                                td Lorem ipsum
-                            tr
-                                td Lorem ipsum
-                                td Lorem ipsum
-                            tr
-                                td Lorem ipsum
-                                td Lorem ipsum
+ 
 
 
         section.o-sectionSimilar

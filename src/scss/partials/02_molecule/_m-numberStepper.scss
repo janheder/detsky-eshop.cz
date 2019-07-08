@@ -2,9 +2,10 @@
     position: relative;
     z-index: 1;
     border-radius: $border-radius-primary;
-    background: $bg-light;
+    background: $bg-white;
     color: $text-dark;
     max-width: 140px;
+    border: 1px solid $border-grey;
 }
 .m-numberStepper__input{
     border: 0;
@@ -57,7 +58,7 @@
 
 
 .m-numberStepper.-dark{
-    background: $bg-light;
+    background: $bg-white;
 }
 
 

@@ -1,5 +1,5 @@
 .o-navMain{
-    background: transparent;
+    background: $bg-primary;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,7 +7,7 @@
     height: 72px;
     z-index: 5;
     position: relative;
-    max-width: 1920px;
+    max-width: 1300px;
     margin: 0 auto;
 
 }

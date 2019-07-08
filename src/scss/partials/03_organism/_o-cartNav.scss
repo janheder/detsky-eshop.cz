@@ -22,6 +22,7 @@
     @include f-16-primary-regular;
     margin-bottom: 0px;
     margin-left: 15px;
+    font-weight: 500;
 }
 .o-cartNav__number{
     @include f-16-primary-regular;
@@ -39,20 +40,20 @@
 
 .o-cartNav__single.-active{
     .o-cartNav__title{
-        color: $text-brand;
+        color: $text-primary;
     }
     .o-cartNav__number{
         color: $text-white;
-        background: $bg-brand;
+        background: $green;
     }
 }
 .o-cartNav__single.-complete{
     .o-cartNav__title{
-        color: $text-brand-secondary;
+        color: $text-primary;
     }
     .o-cartNav__number{
         color: $text-white;
-        background: $bg-brand-secondary;
+        background: $blue;
     }
     &:hover, &:active, &:focus{
         text-decoration: none;

@@ -2,6 +2,7 @@
     background: $bg-white;
     position: relative;
     padding: 0;
+    border: 1px solid $border-grey;
 }
 .o-filter__responsive{
     display: none;
@@ -35,17 +36,6 @@
     display: flex;
     flex-direction: row;
     position: relative;
-
-    &::after{
-        content: "";
-        background: $border-grey;
-        height: 1px;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        z-index: 1;
-    }
 }
 .o-filter__single{
 

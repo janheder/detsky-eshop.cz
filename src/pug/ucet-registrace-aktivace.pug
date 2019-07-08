@@ -5,9 +5,16 @@ html(lang=lang)
     body
         include partials/_modal-login.pug
         include partials/_navMain.pug
-        include partials/_navProducts.pug
-                
-        include partials/_breadcrumb.pug
+
+        .container
+            .row
+                .col-12.col-md-3
+                    .navProducts__toggle Menu kategorií
+
+                    .navProducts--absolute
+                        include partials/_navProducts.pug
+                .col-12.col-md-9    
+                    include partials/_breadcrumb.pug
         main
             .container
                 .row

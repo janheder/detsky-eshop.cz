@@ -16,6 +16,8 @@
 }
 .o-subCategories__single{
     background: $bg-white;
+    border: 1px solid $border-grey;
+    border-radius: $border-radius-primary;
     padding: 2rem;
     display: flex;
     flex-direction: column;

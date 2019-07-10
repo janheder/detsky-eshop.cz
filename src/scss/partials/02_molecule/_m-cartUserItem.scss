@@ -24,6 +24,7 @@
 .m-cartUserItem__bottom{
     background: $bg-white;
     padding: 0px;
+    column-count: 3;
 }
 .m-cartUserItem__small{
     @include f-12-dark-regular;

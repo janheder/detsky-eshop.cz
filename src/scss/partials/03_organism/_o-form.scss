@@ -303,6 +303,7 @@ input{
     a{
         @include f-16-primary-regular;
         color: $text-brand;
+        font-weight: 500;
     }
 }
 .m-formGroup__input::placeholder{

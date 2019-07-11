@@ -174,23 +174,58 @@ html(lang=lang)
                         a.btn.o-productDetailVariants__text.-link(href="#") #[span.a-icon.-cart.-white.o-productDetailVariants__icon]
 
         section.o-productDescription(id="anchor-product-detail-description")
-            .container
-                .row
-                    .col-12.col-md-8 
-                        p
-                            strong Popis
-                        p Hydrance Optimale Riche je výživný hydratační krém, který je určen pro suchou až velmi suchou dehydratovanou citlivou pleť. Přináší okamžitou a intenzivní hydrataci pleti, která má dlouhotrvající účinek. Krém má vláčnou texturu, která dodává pleti pocit pohodlí. Díky unikátnímu složení se snižuje možnost vzniku alergií. Krém je vhodný jako podklad pod make-up.
+                nav.o-tabs__nav.m-tabsNav
+                    .container  
+                        .nav.nav-tabs.m-tabsNav__nav(role="tablist")
+                            a.m-tabsNav__link.active(id="index-1-tab" data-toggle="tab" href="#index-1" role="tab" aria-controls="index-1" aria-selected="true") Popis produktu
+                    
+                            a.m-tabsNav__link(id="index-2-tab" data-toggle="tab" href="#index-2" role="tab" aria-controls="index-2" aria-selected="false") Příslušenství
 
-                        p
-                            strong Dávkování a způsob užití
-                        p Aplikujte krém ráno, anebo večer na dokonale čistou a osušenou pleť.
 
-                        p
-                            strong Složení
-                        p Přípravek obsahuje termální vodu Avene, bambucké máslo, meiboserin, lipomucin.
+                        .tab-content.o-tabs__content.m-tabsContent
+
+                            .tab-pane.fade.m-tabsContent__pane.show.active(id="index-1" role="tabpanel" aria-labelledby="index-1-tab")  
+                                .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-1" aria-expanded="false" aria-controls="#collapseIndexTab-1") Popis produktu
+                                .collapse.m-tabsContent__collapse.show(id="collapseIndexTab-1" aria-labelledby="collapseIndexTab-1")
+
+
+                                    .container
+
+                                        p Hydrance Optimale Riche je výživný hydratační krém, který je určen pro suchou až velmi suchou dehydratovanou citlivou pleť. Přináší okamžitou a intenzivní hydrataci pleti, která má dlouhotrvající účinek. Krém má vláčnou texturu, která dodává pleti pocit pohodlí. Díky unikátnímu složení se snižuje možnost vzniku alergií. Krém je vhodný jako podklad pod make-up.
+
+                                        p
+                                            strong Dávkování a způsob užití
+                                        p Aplikujte krém ráno, anebo večer na dokonale čistou a osušenou pleť.
+
+                                        p
+                                            strong Složení
+                                        p Přípravek obsahuje termální vodu Avene, bambucké máslo, meiboserin, lipomucin.
 
                     
  
+                            .tab-pane.fade.m-tabsContent__pane(id="index-2" role="tabpanel" aria-labelledby="index-2-tab")    
+                                .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-2" aria-expanded="false" aria-controls="#collapseIndexTab-2") Příslušenství
+                                .collapse.m-tabsContent__collapse(id="collapseIndexTab-2" aria-labelledby="collapseIndexTab-2")
+                                    .container  
+
+
+                                        .o-sectionSimilar.m-productCarousel(id="product_swiper2")
+                                            .m-productCarousel__content
+                                                .swiper-wrapper.m-productCarousel__wrap
+
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                    .swiper-slide.m-productCarousel__slide
+                                                        include partials/_single-product-cell.pug
+                                                
+                                            .swiper-button-prev.m-productCarousel__swiperButton.-prev
+                                            .swiper-button-next.m-productCarousel__swiperButton.-next
 
 
         section.o-sectionSimilar

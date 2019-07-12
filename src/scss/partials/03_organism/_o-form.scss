@@ -440,6 +440,9 @@ input{
     .o-filter__single:nth-child(2){
         display: none;
     }
+    .m-formGroup.-textarea .m-formGroup__label{
+        top: 0;
+    }
 }
 /* IE 10, 11 CSS */ 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){

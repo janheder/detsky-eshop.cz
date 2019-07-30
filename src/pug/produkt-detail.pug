@@ -148,30 +148,31 @@ html(lang=lang)
 
         section.o-productDetailVariants
             .container
-                h2.o-productDetailVariants__title Další varianty produktu
-                .o-productDetailVariants__heading
-                    .o-productDetailVariants__headinsSingle Název
-                    .o-productDetailVariants__headinsSingle Počet kusů
-                    .o-productDetailVariants__headinsSingle Cena
-                    .o-productDetailVariants__headinsSingle Dostupnost
-                    .o-productDetailVariants__headinsSingle
+                form(action="" method="")
+                    h2.o-productDetailVariants__title Další varianty produktu
+                    .o-productDetailVariants__heading
+                        .o-productDetailVariants__headinsSingle Název
+                        .o-productDetailVariants__headinsSingle Počet kusů
+                        .o-productDetailVariants__headinsSingle Cena
+                        .o-productDetailVariants__headinsSingle Dostupnost
+                        .o-productDetailVariants__headinsSingle
 
-                - for (var i=0; i<8; i++)
-                    .o-productDetailVariants__single
-                        .o-productDetailVariants__imgWrap
-                            img.o-productDetailVariants__img(src=URLbase+"img/product-thumb-small.jpg" alt="#")
-                        .o-productDetailVariants__text Laťkový rošt s textilií 180/200 cm
-                        .o-productDetailVariants__text
-                            .m-numberStepper
-                                input.m-numberStepper__input(type="number" min="1" max="99" value="1" name="cart-item-alt")
-                                .m-numberStepper__btnUp
-                                    span.m-numberStepper__iconUp
-                                .m-numberStepper__btnDown
-                                    span.m-numberStepper__iconDown
+                    - for (var i=0; i<8; i++)
+                        .o-productDetailVariants__single
+                            .o-productDetailVariants__imgWrap
+                                img.o-productDetailVariants__img(src=URLbase+"img/product-thumb-small.jpg" alt="#")
+                            .o-productDetailVariants__text Laťkový rošt s textilií 180/200 cm
+                            .o-productDetailVariants__text
+                                .m-numberStepper
+                                    input.m-numberStepper__input(type="number" min="1" max="99" value="1" name="cart-item-alt")
+                                    .m-numberStepper__btnUp
+                                        span.m-numberStepper__iconUp
+                                    .m-numberStepper__btnDown
+                                        span.m-numberStepper__iconDown
 
-                        .o-productDetailVariants__text.-price 426 Kč
-                        .o-productDetailVariants__text.-stock Skladem
-                        a.btn.o-productDetailVariants__text.-link(href="#") #[span.a-icon.-cart.-white.o-productDetailVariants__icon]
+                            .o-productDetailVariants__text.-price 426 Kč
+                            .o-productDetailVariants__text.-stock Skladem
+                            button.btn.o-productDetailVariants__text.-link(href="#") #[span.a-icon.-cart.-white.o-productDetailVariants__icon]
 
         section.o-productDescription(id="anchor-product-detail-description")
                 nav.o-tabs__nav.m-tabsNav

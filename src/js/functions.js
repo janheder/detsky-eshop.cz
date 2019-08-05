@@ -451,6 +451,23 @@ $(platbaInput).click(function () {
 });
 
 
+
+
+$(dopravaInput, platbaInput).click(function () { 
+    var name1 = $(dopravaInput+":checked").siblings(".m-formGroup__label").html();
+    var nameClean1 = name1.substr(0, name1.indexOf('<span'));
+
+    var name2 = $(platbaInput+":checked").siblings(".m-formGroup__label").html();
+    var nameClean2 = name2.substr(0, name2.indexOf('<span'));
+
+    var priceSum = parseInt($("#delivery_form").data("price"));
+
+    $(".m-cartBarResponsive__price")
+});
+
+
+
+
 $.fn.digits = function(){ 
     return this.each(function(){ 
         $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ") ); 

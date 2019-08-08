@@ -148,7 +148,7 @@ html(lang=lang)
 
         section.o-productDetailVariants
             .container
-                form(action="" method="")
+                form(action="/" method="post")
                     h2.o-productDetailVariants__title Další varianty produktu
                     .o-productDetailVariants__heading
                         .o-productDetailVariants__headinsSingle Název
@@ -172,7 +172,7 @@ html(lang=lang)
 
                             .o-productDetailVariants__text.-price 426 Kč
                             .o-productDetailVariants__text.-stock Skladem
-                            button.btn.o-productDetailVariants__text.-link(href="#") #[span.a-icon.-cart.-white.o-productDetailVariants__icon]
+                            button.btn.o-productDetailVariants__text.-link(type="submit") #[span.a-icon.-cart.-white.o-productDetailVariants__icon]
 
         section.o-productDescription(id="anchor-product-detail-description")
                 nav.o-tabs__nav.m-tabsNav

@@ -452,19 +452,19 @@ $(platbaInput).click(function () {
 
 
 
-
-$(dopravaInput, platbaInput).click(function () { 
-    var name1 = $(dopravaInput+":checked").siblings(".m-formGroup__label").html();
-    var nameClean1 = name1.substr(0, name1.indexOf('<span'));
-
-    var name2 = $(platbaInput+":checked").siblings(".m-formGroup__label").html();
-    var nameClean2 = name2.substr(0, name2.indexOf('<span'));
+$(document).ready(function() {
+$('.o-cartDeliveryForm .m-formGroup__input[name="platba"]').click(function () { 
+    var name1 = $('.o-cartDeliveryForm .m-formGroup__input[name="doprava"]:checked').siblings(".m-formGroup__price").html();
+    var nameClean1 = parseInt(name1.substr(0, name1.indexOf('Kč')));
+    
+    var name2 = $('.o-cartDeliveryForm .m-formGroup__input[name="platba"]:checked').siblings(".m-formGroup__price").html();
+    var nameClean2 = parseInt(name2.substr(0, name2.indexOf('Kč')));
 
     var priceSum = parseInt($("#delivery_form").data("price"));
 
-    $(".m-cartBarResponsive__price")
+    $(".m-cartBarResponsive__price span").text(priceSum+nameClean1+nameClean2);
 });
-
+});
 
 
 
